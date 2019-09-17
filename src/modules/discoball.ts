@@ -16,7 +16,7 @@ export class DiscoSystem {
     }
     engine.getComponentGroup(Ball).entities[0].getComponent(Transform).rotate(Vector3.Up(), dt * 30)
     const flicker = engine.getComponentGroup(Laser).entities[Math.floor(Math.random()*NUM_LASERS)]
-    // flicker.getComponent(GLTFShape).visible = !flicker.getComponent(GLTFShape).visible
+    flicker.getComponent(GLTFShape).visible = !flicker.getComponent(GLTFShape).visible
   }
 }
 
@@ -56,7 +56,7 @@ export class DiscoBall {
     this.scale = scale;
 
     this.spawnBall();
-    this.spawnLasers();
+    // this.spawnLasers();
   }
   
   startSystem() {
