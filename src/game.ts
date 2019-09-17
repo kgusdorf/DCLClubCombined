@@ -32,7 +32,7 @@ export class SlerpRotate implements ISystem {
 
 // Store disco ball and elevator objects in variables
 const disco = new DiscoBall(new Vector3(8, 5, 9), 0.5)
-const elevator = new Elevator(new Vector3(13.7, 0, 10), [0, 5.4, 11.7])
+const elevator = new Elevator(new Vector3(13.7, 0, 10), [0.0, 5.4, 11.7], Quaternion.Euler(0, -90, 0))
 
 // Used to keep track if doors have already been opened
 let doorOpened : boolean = false

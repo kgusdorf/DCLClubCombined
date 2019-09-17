@@ -56,7 +56,7 @@ export class DiscoBall {
     this.scale = scale;
 
     this.spawnBall();
-    // this.spawnLasers();
+    this.spawnLasers();
   }
   
   startSystem() {
